@@ -1,0 +1,96 @@
+/* General style */
+
+*{
+  box-sizing: border-box;
+  margin: 0; 
+  padding: 0;
+}
+
+body{
+	font-family: 'Helvetica, Arial, Sans-serif';
+	color: 000;
+	margin: 10px;
+}
+
+h1{
+	text-align: center;
+	font-size: 1.75em;
+	margin: 1em 0;
+}
+
+.menu_section{
+	float: left;
+}
+
+section{
+		border: 1px solid black;
+		background: #eee;
+		padding: 1em;
+		margin: 10px;
+		position: relative;
+		color: #333;
+}
+
+section h2{
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-align: center;
+	border: 1px solid black;
+	padding: 0.1em 1.5em; 
+	font-size: 1.25em;
+	
+}
+
+#section1 h2{
+	background: #ff9900;
+}
+
+#section2 h2{
+	background: #66ccff;
+}
+
+#section3 h2{
+	background: #00cc99;
+}
+
+p{
+margin-top: 1.5em;
+font-size: 1em;
+}
+
+
+/* Desktop */
+@media (min-width:992px){
+
+	.menu_section{
+		width: 33.33%;
+		float: left;
+	}
+
+}
+
+
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px){
+
+	#section1, #section2{
+		width: 50%;
+		float: left;
+	}
+
+	#section3{
+		display: inline;
+	}
+
+}
+
+
+
+/* Mobile */
+@media (max-width: 767px){
+
+
+}
+
